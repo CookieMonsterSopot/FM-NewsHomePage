@@ -1,0 +1,247 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "LOGO MENU MENU"
+    "IMG IMG LINKS"
+    "TEXT1 TEXT2 LINKS"
+    "ADV1 ADV2 ADV3";
+  margin-top: 25px;
+  width: 85%;
+  height: 600px;
+}
+
+h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 40px;
+  font-weight: 800;
+  margin: 5px 0;
+  padding-bottom: 25px;
+}
+
+h3 {
+  color: hsl(233, 8%, 79%);
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+.LOGO {
+  position: relative;
+  box-sizing: border-box;
+  grid-area: LOGO;
+}
+
+.MENU {
+  text-align: right;
+  box-sizing: border-box;
+  grid-area: MENU;
+}
+.MENU li {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  flex-direction: column;
+}
+.MENU li a {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 40px;
+  margin-right: 0px;
+
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+.MENU li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.IMG {
+  margin-top: 25px;
+  margin-right: 15px;
+  width: 700px;
+  grid-area: IMG;
+}
+
+.TEXT1 {
+  width: 315px;
+  color: black;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 54px;
+  padding: 25px 15px 15px 15px;
+  margin-bottom: 30px;
+  grid-area: TEXT1;
+}
+
+.TEXT2 {
+  width: 315px;
+  color: hsl(236, 13%, 42%);
+  font-size: 14px;
+  line-height: 24px;
+  padding: 25px 5px 15px 5px;
+  margin-bottom: 30px;
+  grid-area: TEXT2;
+}
+button {
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  letter-spacing: 4px;
+  background-color: hsl(5, 85%, 63%);
+  width: 180px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+}
+button:hover {
+  background-color: black;
+}
+
+.LINKS {
+  height: 438px;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  color: hsl(233, 8%, 79%);
+  width: 280px;
+  padding: 25px 25px 25px 25px;
+  color: hsl(36, 100%, 99%);
+  display: block;
+  float: right;
+  margin-top: 25px;
+  margin-left: 0px;
+  background-color: black;
+  grid-area: LINKS;
+}
+.LINKS a {
+  color: hsl(36, 100%, 99%);
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.LINKS a:hover {
+  color: hsl(5, 85%, 63%);
+}
+hr {
+  border: 1px solid rgb(63, 62, 62);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#adv {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  width: 320px;
+  height: 150px;
+  vertical-align: bottom;
+}
+
+#adv img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+#adv p {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  color: hsl(236, 13%, 42%);
+}
+
+#adv h3 {
+  color: hsl(233, 8%, 79%);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+#adv a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0;
+  color: black;
+}
+#adv a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.ADV1 {
+  grid-area: ADV1;
+}
+
+.ADV2 {
+  grid-area: ADV2;
+}
+
+.ADV3 {
+  grid-area: ADV3;
+}
+
+html,
+body {
+  font-family: "Inter";
+  background-color: hsl(36, 100%, 99%);
+  max-width: 1050px;
+  margin: auto;
+  height: 100%;
+}
+
+/* * .container * {
+  border: 1px solid red;
+  position: relative;
+}
+.container *:after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+} */
+
+@media (max-width: 650px) {
+  #adv {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+  .TEXT {
+    margin-left: 2em;
+  }
+  .container {
+    position: absolute;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+  }
+  .MENU li {
+    display: block;
+    text-align: center;
+  }
+  .IMG {
+    content: url("/assets/images/image-web-3-mobile.jpg");
+    object-fit: cover;
+    object-position: -20% 0;
+    width: 85%;
+  }
+  .LINKS {
+    width: 85%;
+    align-items: center;
+    display: block;
+    flex-wrap: wrap;
+  }
+}

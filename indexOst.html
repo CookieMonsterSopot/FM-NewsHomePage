@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+
+      .div1 {
+        width: 350px;
+        background-color: black;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .div2 {
+        width: 700px;
+        background-color: blueviolet;
+        grid-area: 1 / 2 / 2 / 4;
+      }
+      .div3 {
+        width: 700px;
+        background-color: darkgoldenrod;
+        grid-area: 2 / 1 / 3 / 3;
+      }
+      .div4 {
+        width: 350px;
+        background-color: darkslateblue;
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .div5 {
+        width: 350px;
+        background-color: darkolivegreen;
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .div6 {
+        width: 350px;
+        background-color: darkblue;
+        grid-area: 2 / 3 / 4 / 4;
+      }
+      .div7 {
+        width: 350px;
+        background-color: black;
+        grid-area: 4 / 1 / 5 / 2;
+      }
+      .div8 {
+        width: 350px;
+        background-color: black;
+        grid-area: 4 / 2 / 5 / 3;
+      }
+      .div9 {
+        width: 350px;
+        background-color: black;
+        grid-area: 4 / 3 / 5 / 4;
+      }
+      @media screen and (max-width: 375px) {
+        .parent {
+          display: flex;
+          flex-direction: column;
+        }
+        .div1 {
+          display: flex;
+          flex-direction: column;
+        }
+        .div2 {
+          display: flex;
+
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">W.</div>
+      <div class="div2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+      <div class="div3">
+        <img
+          src="/assets/images/image-web-3-desktop.jpg"
+          alt=""
+          width="700px"
+        />
+      </div>
+      <div class="div4">The Bright Future of Web 3.0?</div>
+      <div class="div5">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise? <br /><button>READ MORE</button>
+      </div>
+      <div class="div6"><h1>New</h1></div>
+      <div>
+        <a href="#">Hydrogen VS Electric Cars</a>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr />
+      </div>
+      <div>
+        <a href="#">The Downsides of AI Artistry</a>
+        <p>
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+        <hr />
+      </div>
+      <div>
+        <a href="#">Is VC Funding Drying Up?</a>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </div>
+      <div class="div7">
+        <img src="assets/images/image-retro-pcs.jpg" />
+        <h3>01</h3>
+        <a href="#">Reviving Retro PCs</a>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+      <div class="div8">
+        <img src="assets/images/image-top-laptops.jpg" />
+        <h3>02</h3>
+        <a href="#">Top 10 Laptops of 2022</a>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+      <div class="div9">
+        <img src="assets/images/image-gaming-growth.jpg" />
+        <h3>03</h3>
+        <a href="#">The Growth of Gaming</a>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Grzegorz Wozniak</a>.
+    </div>
+  </body>
+</html>
