@@ -195,22 +195,6 @@ body {
   height: 100%;
 }
 
-/* * .container * {
-  border: 1px solid red;
-  position: relative;
-}
-.container *:after {
-  content: attr(class);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-} */
-
 @media (max-width: 650px) {
   #adv {
     display: flex;
