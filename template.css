@@ -233,7 +233,7 @@ body {
     text-align: center;
   }
   .IMG {
-    content: url("./assets/images/image-web-3-mobile.jpg");
+    content: url("../assets/images/image-web-3-mobile.jpg");
     object-fit: cover;
     object-position: -20% 0;
     width: 85%;
