@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -8,24 +8,28 @@
     "LOGO MENU MENU"
     "IMG IMG LINKS"
     "TEXT1 TEXT2 LINKS"
-    "ADV1 ADV2 ADV3";
+    "ADV1 ADV2 ADV3"
+    "FTR FTR FTR";
   margin-top: 25px;
   width: 85%;
-  height: 600px;
+  height: 0%;
 }
 .attribution {
   font-size: 11px;
   text-align: center;
+  vertical-align: bottom;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 h1 {
   color: hsl(35, 77%, 62%);
   font-size: 40px;
   font-weight: 800;
   margin: 5px 0;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
+  padding-top: 20px;
 }
 
 h3 {
@@ -43,20 +47,20 @@ h3 {
 }
 
 .MENU {
-  width: 100%;
   text-align: right;
   box-sizing: content-box;
   grid-area: MENU;
 }
 .MENU li {
   list-style: none;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
+  justify-content: flex-end;
   flex-direction: column;
 }
 .MENU li a {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   font-size: 15px;
   margin-left: 40px;
@@ -121,7 +125,7 @@ button:hover {
   display: block;
   float: right;
   margin-top: 25px;
-  margin-left: 0px;
+  margin-bottom: 25px;
   background-color: black;
   grid-area: LINKS;
 }
@@ -130,11 +134,15 @@ button:hover {
   font-size: 15px;
   font-weight: 900;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 .LINKS a:hover {
   color: hsl(5, 85%, 63%);
+}
+.LINKS p {
+  margin-top: 10px;
 }
 hr {
   border: 1px solid rgb(63, 62, 62);
@@ -193,7 +201,10 @@ hr {
 .ADV3 {
   grid-area: ADV3;
 }
-
+.FTR {
+  padding: 15px;
+  grid-area: FTR;
+}
 html,
 body {
   font-family: "Inter";
@@ -202,48 +213,56 @@ body {
   margin: auto;
   height: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 @media (max-width: 650px) {
-  .LOGO {
-    display: none;
-  }
   #adv {
-    width: 85%;
-    display: table;
-    text-align: left;
-    flex-flow: row;
+    display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    align-self: center;
+    margin-left: 10%;
   }
-  .TEXT {
-    margin-left: 2em;
+  .TEXT1 {
+    align-self: center;
+    margin-left: auto;
+  }
+  .TEXT2 {
+    align-self: center;
+    margin-left: auto;
   }
   .container {
-    width: 350px;
+    position: absolute;
     display: block;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 2em;
     text-align: center;
   }
-  .MENU {
-    display: inline-block;
-    padding: 0px;
-    width: 100%;
-  }
   .MENU li {
     display: block;
     text-align: center;
   }
+  .MENU li a {
+    font-size: 16px;
+    line-height: 25px;
+    display: block;
+    text-align: center;
+  }
   .IMG {
-    content: url("assets/images/image-web-3-desktop.jpg");
+    content: url("image-web-3-mobile.jpg");
     object-fit: cover;
+    object-position: -20% 0;
     width: 85%;
   }
   .LINKS {
-    width: 65%;
+    width: 85%;
     align-items: center;
     display: block;
     flex-wrap: wrap;
+    align-self: center;
+    margin-left: auto;
   }
 }
