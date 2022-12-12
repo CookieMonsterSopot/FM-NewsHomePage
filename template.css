@@ -11,7 +11,7 @@
     "ADV1 ADV2 ADV3"
     "FTR FTR FTR";
   margin-top: 25px;
-  width: 85%;
+  max-width: 1050px;
   height: 0%;
 }
 .attribution {
@@ -40,8 +40,6 @@ h3 {
   padding: 0;
 }
 .LOGO {
-  width: 100%;
-  position: relative;
   box-sizing: content-box;
   grid-area: LOGO;
 }
@@ -218,7 +216,15 @@ body {
   padding: 0;
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 700px) and (min-width: 320px) {
+  .LOGO {
+    width: 45%;
+    justify-self: center;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px auto 25px auto;
+  }
   #adv {
     width: 350px;
     text-align: left;
