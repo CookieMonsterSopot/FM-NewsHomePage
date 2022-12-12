@@ -13,7 +13,13 @@
   width: 85%;
   height: 600px;
 }
-
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 h1 {
   color: hsl(35, 77%, 62%);
   font-size: 40px;
@@ -30,25 +36,27 @@ h3 {
   padding: 0;
 }
 .LOGO {
+  width: 100%;
   position: relative;
-  box-sizing: border-box;
+  box-sizing: content-box;
   grid-area: LOGO;
 }
 
 .MENU {
+  width: 100%;
   text-align: right;
-  box-sizing: border-box;
+  box-sizing: content-box;
   grid-area: MENU;
 }
 .MENU li {
   list-style: none;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   flex-direction: column;
 }
 .MENU li a {
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-size: 15px;
   margin-left: 40px;
@@ -197,7 +205,10 @@ body {
 
 @media (max-width: 650px) {
   #adv {
-    display: flex;
+    width: 85%;
+    display: table;
+    text-align: left;
+    flex-flow: row;
     flex-direction: row;
     margin-left: 30px;
   }
@@ -205,12 +216,17 @@ body {
     margin-left: 2em;
   }
   .container {
-    position: absolute;
+    width: 350px;
     display: block;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2em;
     text-align: center;
+  }
+  .MENU {
+    display: inline-block;
+    padding: 0px;
+    width: 100%;
   }
   .MENU li {
     display: block;
@@ -223,7 +239,7 @@ body {
     width: 85%;
   }
   .LINKS {
-    width: 85%;
+    width: 65%;
     align-items: center;
     display: block;
     flex-wrap: wrap;
