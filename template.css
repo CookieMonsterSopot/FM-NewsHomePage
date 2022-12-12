@@ -204,6 +204,9 @@ body {
 }
 
 @media (max-width: 650px) {
+  .LOGO {
+    display: none;
+  }
   #adv {
     width: 85%;
     display: table;
