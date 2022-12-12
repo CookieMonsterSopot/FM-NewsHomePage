@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900"
+    />
+    <link rel="stylesheet" href="template.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <!-- displays site properly based on user's device -->
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
+          <link rel="stylesheet" href="template.css" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+          />
+
+          <title></title>
+          <style>
+            body {
+              font-family: "Inter";
+              background-color: hsl(36, 100%, 99%);
+              max-width: 1050px;
+              margin: auto;
+              border-right: 15px;
+            }
+            header {
+              padding-top: 40px;
+              padding-bottom: 40px;
+              box-sizing: border-box;
+            }
+
+            main {
+              width: 700px;
+              display: block;
+              float: left;
+              margin-right: 15px;
+              font-size: 34px;
+            }
+            aside {
+              width: 350px;
+              padding: 30px 25px 25px 25px;
+
+              color: hsl(36, 100%, 99%);
+              display: block;
+              float: right;
+              margin-left: 15px;
+              background-color: black;
+            }
+            button {
+              color: hsl(36, 100%, 99%);
+              font-weight: 700;
+              letter-spacing: 4px;
+              background-color: hsl(5, 85%, 63%);
+              width: 180px;
+              height: 50px;
+              margin-top: 25px;
+              border: none;
+            }
+            button:hover {
+              background-color: black;
+            }
+
+            .attribution {
+              font-size: 11px;
+              text-align: center;
+            }
+            .attribution a {
+              color: hsl(228, 45%, 44%);
+            }
+            aside div p {
+              font-size: 14px;
+              letter-spacing: 0;
+              line-height: 20px;
+              color: hsl(233, 8%, 79%);
+            }
+
+            aside div a {
+              color: hsl(36, 100%, 99%);
+              font-size: 15px;
+              font-weight: 900;
+              text-decoration: none;
+              margin: 0;
+              padding: 0;
+            }
+            aside div a:hover {
+              color: hsl(5, 85%, 63%);
+            }
+            hr {
+              border: 1px solid rgb(63, 62, 62);
+              margin-top: 30px;
+              margin-bottom: 30px;
+            }
+
+            h1 {
+              color: hsl(35, 77%, 62%);
+              font-size: 40px;
+              font-weight: 800;
+              margin: 5px 0;
+              padding-bottom: 25px;
+            }
+
+            h4 {
+              color: hsl(233, 8%, 79%);
+              font-size: 25px;
+              font-weight: 900;
+              margin: 0;
+              padding: 0;
+            }
+            .left {
+              float: left;
+            }
+
+            .right {
+              float: right;
+            }
+
+            .clear {
+              clear: both;
+            }
+
+            ul {
+              list-style-type: none;
+            }
+
+            ul li {
+              display: inline-block;
+            }
+            ul li a {
+              font-weight: 500;
+              font-size: 15px;
+              margin-left: 40px;
+              margin-right: 0px;
+              text-decoration: none;
+              color: hsl(236, 13%, 42%);
+            }
+            ul li a:hover {
+              color: hsl(5, 85%, 63%);
+            }
+            .container_main {
+              display: flex;
+            }
+
+            .container_article {
+              align-self: center;
+              justify-content: center;
+              display: flex;
+              margin-bottom: 60px;
+            }
+            .container_left {
+              width: 350px;
+              color: black;
+              font-size: 54px;
+              font-weight: 800;
+              line-height: 54px;
+              padding: 25px 15px 15px 0px;
+            }
+            .container_right {
+              width: 350px;
+              color: hsl(236, 13%, 42%);
+              font-size: 14px;
+              line-height: 24px;
+              padding: 25px 10px 15px 30px;
+            }
+            .boxes {
+              margin-top: 60px;
+              display: flex;
+              justify-content: space-between;
+            }
+            .boxes div {
+              box-sizing: border-box;
+              width: 320px;
+              height: 150px;
+              vertical-align: bottom;
+            }
+            .boxes div img {
+              width: 100px;
+              float: left;
+              margin-right: 10px;
+            }
+            .boxes div p {
+              font-size: 14px;
+              letter-spacing: 0;
+              line-height: 20px;
+              color: hsl(236, 13%, 42%);
+            }
+            .boxes div h3 {
+              color: hsl(233, 8%, 79%);
+              font-size: 30px;
+              font-weight: 700;
+              margin: 0;
+              padding-bottom: 15px;
+            }
+            .boxes div a {
+              text-decoration: none;
+              font-size: 15px;
+              font-weight: 900;
+              letter-spacing: 0;
+              color: black;
+            }
+            .boxes div a:hover {
+              color: hsl(5, 85%, 63%);
+            }
+          </style>
+          <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        </head>
+        <body>
+          <div class="container">
+            <div class="LOGO">
+              <img src="/assets/images/logo.svg" />
+            </div>
+            <div class="MENU">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+              </ul>
+            </div>
+            <div class="IMG">
+              <img width="100%" style: object-fit: cover; object-position: 100%
+              0; src="/assets/images/image-web-3-desktop.jpg" alt=""
+              width="700px" />
+            </div>
+
+            <div class="TEXT1">The Bright Future of Web 3.0?</div>
+            <div class="TEXT2">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise? <br /><button>READ MORE</button>
+            </div>
+            <div class="LINKS">
+              <div>
+                <h1>New</h1>
+              </div>
+              <div>
+                <a href="#">Hydrogen VS Electric Cars</a>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <hr />
+              </div>
+              <div>
+                <a href="#">The Downsides of AI Artistry</a>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+                <hr />
+              </div>
+              <div>
+                <a href="#">Is VC Funding Drying Up?</a>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </div>
+            <div id="adv" class="ADV1">
+              <img src="assets/images/image-retro-pcs.jpg" width="85%" />
+              <h3>01</h3>
+              <a href="#">Reviving Retro PCs</a>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+            <div id="adv" class="ADV2">
+              <img src="assets/images/image-top-laptops.jpg" width="85%" />
+              <h3>02</h3>
+              <a href="#">Top 10 Laptops of 2022</a>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+            <div id="adv" class="ADV3">
+              <img src="assets/images/image-gaming-growth.jpg" width="85%" />
+              <h3>03</h3>
+              <a href="#">The Growth of Gaming</a>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+
+             
+              </div>
+            </div>
+          </div>
+          
+        </body>
+      </html>
+    </header>
+
+  
+  <div class="attribution" style="text-align: center">
+    Challenge by
+    <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank"
+      style="text-align: center"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Grzegorz Wozniak</a>.
+  </body>
+</html>
+
+    
+      </html>
+    </header>
+<footer>
+  
+  <div class="attribution" style="text-align: center">
+    Challenge by
+    <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank"
+      style="text-align: center"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Grzegorz Wozniak</a>.
+  </footer>
+  </body>
+</html>
