@@ -235,8 +235,7 @@ body {
   .IMG {
     content: url("image-web-3-mobile.jpg");
     object-fit: cover;
-    object-position: -20% 0;
-    width: 85%;
+    width: 75%;
   }
   .LINKS {
     width: 65%;
