@@ -220,18 +220,26 @@ body {
 
 @media (max-width: 650px) {
   #adv {
-    display: flex;
+    width: 350px;
+    text-align: left;
+    display: inline-block;
     flex-direction: row;
     align-self: center;
-    margin-left: 10%;
+    margin-left: auto;
   }
   .TEXT1 {
+    width: auto;
+    margin-top: 20px;
     align-self: center;
     margin-left: auto;
+    align-self: center;
   }
   .TEXT2 {
+    width: auto;
     align-self: center;
     margin-left: auto;
+    margin-bottom: 20px;
+    align-self: center;
   }
   .container {
     position: absolute;
@@ -249,16 +257,20 @@ body {
     font-size: 16px;
     line-height: 25px;
     display: block;
+    align-self: center;
     text-align: center;
+    margin-left: auto;
   }
   .IMG {
-    content: url("assets/images/image-web-3-mobile.jpg");
+    content: url("image-web-3-mobile.jpg");
     object-fit: cover;
     object-position: -20% 0;
-    width: 85%;
+    justify-self: center;
+    margin-left: auto;
+    width: 90%;
   }
   .LINKS {
-    width: 85%;
+    width: auto;
     align-items: center;
     display: block;
     flex-wrap: wrap;
