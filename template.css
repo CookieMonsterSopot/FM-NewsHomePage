@@ -29,7 +29,7 @@ h1 {
   font-weight: 800;
   margin: 5px 0;
   padding-bottom: 35px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 h3 {
@@ -42,12 +42,16 @@ h3 {
 .LOGO {
   box-sizing: content-box;
   grid-area: LOGO;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .MENU {
   text-align: right;
   box-sizing: content-box;
   grid-area: MENU;
+  margin-bottom: 25px;
+  margin-top: 35px;
 }
 .MENU li {
   list-style: none;
@@ -60,7 +64,7 @@ h3 {
 .MENU li a {
   text-align: center;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 40px;
   margin-right: 0px;
 
@@ -119,17 +123,18 @@ button:hover {
   color: hsl(233, 8%, 79%);
   width: 280px;
   padding: 25px 25px 25px 25px;
-  color: hsl(36, 100%, 99%);
   display: block;
   float: right;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   background-color: black;
   grid-area: LINKS;
 }
 .LINKS a {
   color: hsl(36, 100%, 99%);
-  font-size: 15px;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: 20px;
   font-weight: 900;
   text-decoration: none;
   margin-top: 15px;
@@ -140,12 +145,16 @@ button:hover {
   color: hsl(5, 85%, 63%);
 }
 .LINKS p {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+
   margin-top: 10px;
 }
 hr {
   border: 1px solid rgb(63, 62, 62);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #adv {
@@ -215,11 +224,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+#checkbox {
+  display: none;
+}
 @media screen and (max-width: 700px) and (min-width: 320px) {
   .LOGO {
-    width: 45%;
-    justify-self: center;
+    text-align: left;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -239,8 +249,12 @@ body {
     align-self: center;
     margin-left: auto;
     align-self: center;
+    line-height: 1.2em;
+    padding: 0 25px 0 25px;
   }
   .TEXT2 {
+    font-size: 18px;
+    line-height: 30px;
     width: auto;
     align-self: center;
     margin-left: auto;
@@ -264,8 +278,8 @@ body {
     line-height: 25px;
     display: block;
     align-self: center;
-    text-align: center;
-    margin-left: auto;
+    text-align: left;
+    margin-left: 20px;
   }
   .IMG {
     content: url("assets/images/image-web-3-mobile.jpg");
@@ -273,7 +287,7 @@ body {
     object-position: -20% 0;
     justify-self: center;
     margin-left: auto;
-    width: 90%;
+    width: 95%;
   }
   .LINKS {
     width: auto;
@@ -282,5 +296,108 @@ body {
     flex-wrap: wrap;
     align-self: center;
     margin-left: auto;
+  }
+
+  /* ===================
+ MENU WITH HAMBURGER
+==================== */
+  #checkbox {
+    display: block;
+  }
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #202020;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 300px;
+    height: 900px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background-color: hsl(36, 100%, 99%);
+    box-shadow: -170px 1px 357px 8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -170px 1px 357px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -170px 1px 357px 8px rgba(0, 0, 0, 0.75);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+    opacity: 1;
+  }
+
+  #menu {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 }
